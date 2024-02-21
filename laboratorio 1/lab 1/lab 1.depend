@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1708531830 source:c:\users\victor\desktop\semestre 3\progra1\tareas\laboratorio 1\lab 1\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<iomanip>
+

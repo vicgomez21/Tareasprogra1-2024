@@ -1,4 +1,8 @@
 # depslib dependency file v1.0
-1708100049 source:c:\users\victor\desktop\semestre 3\progra1\tareas\ejercicios en clases\vectores1\main.cpp
+1708527034 source:c:\users\victor\desktop\semestre 3\progra1\tareas\ejercicios en clases\vectores1\main.cpp
 	<iostream>
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<iomanip>
 
