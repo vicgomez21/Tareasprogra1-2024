@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1708739341 source:c:\users\victor\desktop\semestre 3\progra1\tareas\ejercicios en clases\funciones de matrices\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<string.h>
+	<iostream>
+	<iomanip>
+

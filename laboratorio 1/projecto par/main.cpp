@@ -1,4 +1,4 @@
-// Ejemplo de utilización de matrices codigo heredado de C
+// Ejemplo de utilizaciï¿½n de matrices codigo heredado de C
 
 #include <iostream> //biblioteca predeterminada
 
@@ -43,19 +43,22 @@ void llamaCiclo()
     bool repetir = true;
 
 
-    char candidatos[NUMERO_CANDIDATOS][MAXIMA_LONGITUD_CADENA] = {"Candidato 1","candidato 2","candidato 3","candidato 4","candidato 5"};
+    char candidatos[NUMERO_CANDIDATOS][MAXIMA_LONGITUD_CADENA] = {"","","","",""};
     do
     {
         system("cls");
+cout << "*** Elecciones Generales 2024 ***" << endl << endl;
+        for (int i=0; i < NUMERO_CANDIDATOS; i ++ )
+        {
+            cout << "Ingrese el nombre del candidato " << i + 1 << endl;;
+            cin >> candidatos[i] ;
 
-        float resultado_Mesa001=0;
-       // promedio_facultad_2=0;
-        //promedio_facultad_3=0;*/
+        }
 
         cout << "* Comparativo de Votaciones *" << endl << endl;
 
         llenarMatriz(Matriz_mesa_001);
-        resultado_Mesa001 = imprimirMatriz(Matriz_mesa_001, candidatos, "MESA DE VOTOS 001");
+        imprimirMatriz(Matriz_mesa_001, candidatos, "MESA DE VOTOS 001");
 
 
         //}
@@ -83,13 +86,13 @@ void llenarMatriz(float matriz[NUMERO_CANDIDATOS][NUMERO_RONDAS + 1])
         {
             if (y == 0 || y == 4 || y == 3)  //primer cuarta y quinbta votacion
             {
-                calificacion = busquedaAleatorios(MIN_VOTACION, 50);
+                calificacion = busquedaAleatorios(MIN_VOTACION, 25);
             } else if (y == 1)  //segunda votacion
             {
-                calificacion = busquedaAleatorios(MIN_VOTACION, 50);
+                calificacion = busquedaAleatorios(MIN_VOTACION, 25);
             } else if (y == 2)  //tercera votacion
             {
-                calificacion = busquedaAleatorios(MIN_VOTACION, 50);
+                calificacion = busquedaAleatorios(MIN_VOTACION, 25);
             }
             suma += (float)calificacion;
             matriz[x][y] = calificacion;
@@ -114,7 +117,7 @@ void imprimirMatrizLinea()
 }
 float imprimirMatriz(float matriz[NUMERO_CANDIDATOS][NUMERO_RONDAS + 1], char candidatos[NUMERO_CANDIDATOS][MAXIMA_LONGITUD_CADENA], string nombreMesa)
 {
-    //Funciòn que imprime la matriz en pantalla y realizando los calculos necesarios del promedio
+    //Funciï¿½n que imprime la matriz en pantalla y realizando los calculos necesarios del promedio
     int y, x;
 
     float promedioMayor = matriz[0][NUMERO_RONDAS];
